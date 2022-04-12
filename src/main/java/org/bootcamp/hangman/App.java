@@ -74,12 +74,9 @@ public class App {
                 }
 
                 scanner2.close();
-//                System.out.println(informationString);
 
                 JSONParser parse = new JSONParser();
                 dataObject = (JSONArray) parse.parse(String.valueOf(informationString));
-
-//                System.out.println(dataObject.get(0));
             }
         } catch (MalformedURLException e) {
             e.printStackTrace();
